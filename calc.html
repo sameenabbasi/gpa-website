@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <!--<link rel="icon" href="images/favicon.png">-->
+    <script src="myscripts.js"></script>
+    <title>GPA Calculator</title>
+</head>
+<body>
+    <div class="nav">
+        <div id="logo">
+            <a href="index.html">
+                <img id="logoimg" src="images/logo.png">
+            </a>
+        </div>
+        <div class="navbar">
+            <ul class="navlinks">
+                <li id="navbutton"><a  href="calc.html">GPA Calculator</a></li>
+                <li id="navbutton"><a href="convert.html">GPA Converter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="everything">
+        <div>
+            <p>
+                If you wish to calculate the GPA for less than 5 courses,
+                select 0 as the Credit Weight of the remaining options. 
+            </p>
+        </div>
+    <div id="calculator">
+        <div id="weight">
+            <p id="label">Credit Weight</p>
+            <select name="weight1" id="dropdown">
+                <option value="0">0</option>
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1">1</option>
+            </select>
+            <select name="weight2" id="dropdown">
+                <option value="0">0</option>
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1">1</option>
+            </select>
+            <select name="weight3" id="dropdown">
+                <option value="0">0</option>
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1">1</option>
+            </select>
+            <select name="weight4" id="dropdown">
+                <option value="0">0</option>
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1">1</option>
+            </select>
+            <select name="weight5" id="dropdown">
+                <option value="0">0</option>
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1">1</option>
+            </select>
+        </div>
+        <div id="grade">
+            <p id="label">Grade</p>
+            <select name="grade1" id="dropdown">
+                <option value="0">0 (F)</option>
+                <option value="1">1 (D-)</option>
+                <option value="2">2 (D)</option>
+                <option value="3">3 (D+)</option>
+                <option value="4">4 (C-)</option>
+                <option value="5">5 (C)</option>
+                <option value="6">6 (C+)</option>
+                <option value="7">7 (B-)</option>
+                <option value="8">8 (B)</option>
+                <option value="9">9 (B+)</option>
+                <option value="10">10 (A-)</option>
+                <option value="11">11 (A)</option>
+                <option value="12">12 (A+)</option>
+            </select>
+            <select name="grade2" id="dropdown">
+                <option value="0">0 (F)</option>
+                <option value="1">1 (D-)</option>
+                <option value="2">2 (D)</option>
+                <option value="3">3 (D+)</option>
+                <option value="4">4 (C-)</option>
+                <option value="5">5 (C)</option>
+                <option value="6">6 (C+)</option>
+                <option value="7">7 (B-)</option>
+                <option value="8">8 (B)</option>
+                <option value="9">9 (B+)</option>
+                <option value="10">10 (A-)</option>
+                <option value="11">11 (A)</option>
+                <option value="12">12 (A+)</option>
+            </select>
+            <select name="grade3" id="dropdown">
+                <option value="0">0 (F)</option>
+                <option value="1">1 (D-)</option>
+                <option value="2">2 (D)</option>
+                <option value="3">3 (D+)</option>
+                <option value="4">4 (C-)</option>
+                <option value="5">5 (C)</option>
+                <option value="6">6 (C+)</option>
+                <option value="7">7 (B-)</option>
+                <option value="8">8 (B)</option>
+                <option value="9">9 (B+)</option>
+                <option value="10">10 (A-)</option>
+                <option value="11">11 (A)</option>
+                <option value="12">12 (A+)</option>
+            </select>
+            <select name="grade4" id="dropdown">
+                <option value="0">0 (F)</option>
+                <option value="1">1 (D-)</option>
+                <option value="2">2 (D)</option>
+                <option value="3">3 (D+)</option>
+                <option value="4">4 (C-)</option>
+                <option value="5">5 (C)</option>
+                <option value="6">6 (C+)</option>
+                <option value="7">7 (B-)</option>
+                <option value="8">8 (B)</option>
+                <option value="9">9 (B+)</option>
+                <option value="10">10 (A-)</option>
+                <option value="11">11 (A)</option>
+                <option value="12">12 (A+)</option>
+            </select>
+            <select name="grade5" id="dropdown">
+                <option value="0">0 (F)</option>
+                <option value="1">1 (D-)</option>
+                <option value="2">2 (D)</option>
+                <option value="3">3 (D+)</option>
+                <option value="4">4 (C-)</option>
+                <option value="5">5 (C)</option>
+                <option value="6">6 (C+)</option>
+                <option value="7">7 (B-)</option>
+                <option value="8">8 (B)</option>
+                <option value="9">9 (B+)</option>
+                <option value="10">10 (A-)</option>
+                <option value="11">11 (A)</option>
+                <option value="12">12 (A+)</option>
+            </select>
+        </div>
+    </div>
+    <div id="displaygpa">
+        <p>GPA:</p>
+    </div>
+</div>
+</body>
+</html>
