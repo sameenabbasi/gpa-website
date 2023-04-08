@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet">
-    <!--<link rel="icon" href="images/favicon.png">-->
-    <title>GPA Calculator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="myscripts.js"></script>
+    <title>GPA Converter</title>
 </head>
 <body>
     <div class="nav">
@@ -21,6 +25,33 @@
                 <li id="navbutton"><a href="convert.html">GPA Converter</a></li>
             </ul>
         </div>
+    </div>
+    <div id="everything">
+        <p>
+            Convert your GPA from a 12.0 point GPA system to a 
+            4.0 point GPA system using the option selector below.
+        </p>
+        <div id="calculator">
+            <div id="weight">
+                <p id="label">12.0 GPA</p>
+                <select class="dropdown" id="converter">
+                    <option value="12">12 (A+)</option>
+                    <option value="11">11 (A)</option>
+                    <option value="10">10 (A-)</option>
+                    <option value="9">9 (B+)</option>
+                    <option value="8">8 (B)</option>
+                    <option value="7">7 (B-)</option>
+                    <option value="6">6 (C+)</option>
+                    <option value="5">5 (C)</option>
+                    <option value="4">4 (C-)</option>
+                    <option value="3">3 (D+)</option>
+                    <option value="2">2 (D)</option>
+                    <option value="1">1 (D-)</option>
+                    <option value="0">0 (F)</option>
+                </select>
+                <a href="#" onclick="convert()" id="calcbutton">Convert</a>
+                <p id="convertedgpa" class="displaygpa">GPA: </p>
+            </div>
     </div>
 </body>
 </html>

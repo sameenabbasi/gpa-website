@@ -93,12 +93,24 @@ body {
     border-radius: 3em;
     background-color: rgb(130, 7, 141);
     color: white;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding: 1em;
     font-size: 2vw;
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
+}
+#calcbutton {
+    border-radius: 3em;
+    background-color: rgb(130, 7, 141);
+    color: white;
+    padding: 1em;
+    font-size: 2vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    margin-top: 1em;
+    width:8em;
+    align-self: center;
 }
 #logoimg{
     margin: 10%;
@@ -122,15 +134,21 @@ p {
     margin-top: 2em;
     margin-bottom: 1.5em;
 }
-#dropdown {
+.dropdown {
     padding:1em;
     margin-bottom: 1em;
+}
+.displaygpa{
+    width: 4em;
+    margin-top: 2em;
+    font-size: 2vw;
+    align-self: center;
+    text-align: center;
 }
 #weight, #grade {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:0em;
 }
 #displaygpa{
     display:flex;
@@ -140,7 +158,7 @@ p {
 #everything{
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-bottom: 3%;
     margin-left:25%;
     margin-right: 25%;
     background-color:#f3d6f7;
