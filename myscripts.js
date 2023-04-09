@@ -63,7 +63,7 @@ function calculate(){
             div+=w;
         }
     }
-    var gpa = "GPA: "+ (total/div).toPrecision(2);
+    var gpa = "GPA: "+ (total/div).toPrecision(3);
     if (div==0){
         gpa = "GPA: " + "0";
     }
